@@ -24,6 +24,7 @@
             font-weight: 400;
         }
     </style>
+    <!-- Header -->
     <header class="header">
         <h1 id="title">Magic 8Ball</h1>
         <p id="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, praesentium. Sequi fugiat
@@ -34,15 +35,22 @@
         </p>
     </header>
 
+    <!-- Main -->
     <section class="main">
-        <img src="" alt="8 Ball" class="8ballimg">
+        <div class="8ball">
+            <img src="" alt="8 Ball" class="8ballimg">
+            <div class="8balltext">
+                <h2 id="8ballsays">Magic 8Ball says:</h2>
+                <p id="8balloutput"></p>
+            </div>
+        </div>
         <div class="question">
             <label for="input" id="questioninfo"></label>
             <input type="text" id="input" placeholder="Type your question..." name="input">
             <button id="askbtn">Ask the 8Ball</button>
         </div>
     </section>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="footername">
             <div class="nameline"></div>
@@ -62,6 +70,8 @@
         </div>
     </footer>
 
+
+    <script src="main.js"></script>
 </body>
 
 </html>
