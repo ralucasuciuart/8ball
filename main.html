@@ -17,53 +17,69 @@
 
 <body>
     <style>
+        :root {
+            --white: #F5FBEF;
+            --pink: #E58F65;
+            --black: #080708;
+            --grey: #686963;
+            --blue: #668586;
+        }
+
         body {
-            background-color: #E58F65;
-            color: #080708;
+            background-color: var(--white), #F5FBEF;
+            color: var(--black), #080708;
             font-family: 'Inter', sans-serif;
             font-weight: 400;
         }
+
+        #title,
+        #eightballsays {
+            font-weight: 700;
+        }
+
+        #footer {
+            margin-top: 10%;
+        }
     </style>
     <!-- Header -->
-    <header class="header">
-        <h1 id="title">Magic 8Ball</h1>
-        <p id="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, praesentium. Sequi fugiat
-            ratione
-            animi esse. Odit placeat aliquam sapiente magni, excepturi culpa doloribus, ea blanditiis ipsam non sequi.
-            Odit,
-            quas.
+    <header id="header" class="container text-center my-4 w-75 h-100">
+        <h1 id="title" class="col-md-auto">Magic 8Ball</h1>
+        <p id="info" class="col-md-auto mt-3">The magic 8-Ball is a sphere toy that is used for
+            fortune-telling or seeking
+            advice.
+            It was invented in 1946 by Albert C. Carter and Abe Bookman. Ask your question below and shake the 8-Ball to
+            get your answer.
         </p>
     </header>
 
     <!-- Main -->
-    <section class="main">
-        <div class="8ball">
-            <img src="" alt="8 Ball" class="8ballimg">
-            <div class="8balltext">
-                <h2 id="8ballsays">Magic 8Ball says:</h2>
-                <p id="8balloutput"></p>
+    <section id="main" class="container text-center my-md-5 w-75 h-100">
+        <div id="eightball">
+            <img src="8ball.png" alt="8 Ball" id="eightballimg" class="w-25 mx-auto my-4">
+            <div class="eightballtext">
+                <h2 id="eightballsays" class="m-3">Magic 8-Ball says...</h2>
+                <p id="eightballoutput" class="m-1">&nbsp;</p>
             </div>
         </div>
-        <div class="question">
-            <label for="input" id="questioninfo"></label>
-            <input type="text" id="input" placeholder="Type your question..." name="input">
-            <button id="askbtn">Ask the 8Ball</button>
+        <div id="question">
+            <input class="m-2 w-25" type="text" id="input" placeholder="Type your question..." name="input">
+            <button id="askbtn" class="m-3">Shake</button>
         </div>
     </section>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footername">
+    <footer id="footer" class="container text-center mb-5 w-75 h-100">
+        <div id="footername">
             <div class="nameline"></div>
             <a href="https://www.ralucasuciuart.com" id="name">Raluca Suciu</a>
             <div class="nameline"></div>
         </div>
 
 
-        <div class="socials">
+        <div id="socials" class="my-2">
             <p id="socialheader">Get in touch</p>
 
-            <div class="icons">
-                <a href="" class="socialicon"><img src="" alt="Website"></a>
+            <div id="icons" class="my-2">
+                <a href="https://www.ralucasuciuart.com" class="socialicon"><img src="" alt="Website"></a>
                 <a href="" class="socialicon"><img src="" alt="GitHub"></a>
                 <a href="mailto:ralucasuciuart@gmail.com" class="socialicon"><img src="" alt="Email"></a>
             </div>

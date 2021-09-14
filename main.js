@@ -1,3 +1,4 @@
+// Button onclick random answer
 document.getElementById("askbtn").onclick = function getAnswer() {
     let randomNr = Math.floor(Math.random() * 15);
     let eightBall = '';
@@ -33,5 +34,7 @@ document.getElementById("askbtn").onclick = function getAnswer() {
     } else {
         eightBall = 'Very doubtful';
     }
-    document.getElementById("8balloutput").innerHTML = eightBall;
+    document.getElementById("eightballoutput").innerHTML = eightBall;
 }
+
+// Button onclick style
