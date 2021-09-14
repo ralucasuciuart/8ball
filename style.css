@@ -1,0 +1,23 @@
+:root {
+    --white: #F5FBEF;
+    --pink: #E58F65;
+    --black: #080708;
+    --grey: #686963;
+    --blue: #668586;
+}
+
+body {
+    background-color: var(--white), #F5FBEF;
+    color: var(--black), #080708;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+#title,
+#eightballsays {
+    font-weight: 700;
+}
+
+#footer {
+    margin-top: 10%;
+}
