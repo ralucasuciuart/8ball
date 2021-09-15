@@ -18,40 +18,39 @@
 
 <body>
     <!-- Header -->
-    <header id="header" class="container text-center my-4 w-75 h-100">
-        <h1 id="title" class="col-md-auto">Magic 8Ball</h1>
-        <p id="info" class="col-md-auto m-4 text-wrap">The magic 8-Ball is a sphere toy that is used for
+    <header id="header" class="d-flex flex-column text-center my-4 w-100 h-100">
+        <h1 id="title">Magic 8Ball</h1>
+        <p id="info" class="m-4 text-wrap">The magic 8-Ball is a sphere toy that is used for
             fortune-telling or seeking advice. Ask your question below and shake the 8-Ball toget your answer.
         </p>
     </header>
 
     <!-- Main -->
-    <section id="main" class="container text-center my-md-5 w-75 h-100">
+    <section id="main" class="d-flex flex-column text-center my-3 w-100 h-100">
         <div id="eightball">
-            <img src="8ball.png" alt="8 Ball" id="eightballimg" class="w-25 mx-auto my-4">
+            <img src="8ball.png" width="280" alt="8 Ball" id="eightballimg" class="mx-auto my-3">
             <div class="eightballtext">
-                <h2 id="eightballsays" class="m-3">Magic 8-Ball says...</h2>
-                <p id="eightballoutput" class="m-1">&nbsp;</p>
+                <h2 id="eightballsays" class="m-3 fs-2">Magic 8-Ball says...</h2>
+                <p id="eightballoutput" class="m-2 fs-4">&nbsp;</p>
             </div>
         </div>
-        <div id="question">
-            <input class="m-2 w-25" type="text" id="input" placeholder="Type your question..." name="input">
-            <button id="askbtn" class="m-3">Shake</button>
+        <div id="question" class="d-flex flex-column align-items-center">
+            <input class="my-2 w-25 fs-6 p-2" type="text" id="input" placeholder="Type your question..." name="input">
+            <button id="askbtn" class="my-2 fs-5 p-1">Shake</button>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer id="footer" class="container text-center p-5 w-100">
+    <footer id="footer" class="d-flex flex-column text-center p-5 w-100">
         <div id="footername">
-            <div class="nameline"></div>
-            <a href="https://www.ralucasuciuart.com" id="name">Raluca Suciu</a>
-            <div class="nameline"></div>
+            <a href="https://www.ralucasuciuart.com" id="name" class="fs-4">Raluca Suciu</a>
         </div>
 
 
         <div id="socials" class="m-2">
-            <p id="socialheader">Get in touch</p>
+            <p id="socialheader" class="fs-6">Get in touch</p>
 
-            <div id="icons" class="m-2">
+            <div id="icons" class="m-2 d-flex flex-row justify-content-center">
                 <a href="https://www.github.com/ralucasuciuart"><img src="github.svg" width="20" alt="GitHub"
                         class="socialicon"></a>
                 <a href="https://www.ralucasuciuart.com"><img src="web.svg" width="20" alt="Website"

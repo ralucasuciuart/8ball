@@ -8,8 +8,10 @@
 
 body {
     box-sizing: border-box;
+    background-color: white;
     background-color: var(--white) !important;
-    color: var(--black);
+    color: black;
+    color: var(--black) !important;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     overflow: scroll;
@@ -20,14 +22,25 @@ body {
 #eightballsays {
     font-weight: 700;
 }
+
+#eightballimg {
+    z-index: 1;
+}
+
+#askbtn {
+    width: 15%;
+}
+
 #footer {
+    background-color: var(--black);
     margin-top: 10%;
+}
+#socialheader {
+    color: grey;
+    color: var(--grey);
 }
 
 .socialicon {
     margin: 0 10px;
 }
 
-#footer {
-    background-color: var(--black);
-}
