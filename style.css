@@ -7,6 +7,7 @@
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--white), #F5FBEF;
     color: var(--black), #080708;
     font-family: 'Inter', sans-serif;
@@ -20,4 +21,8 @@ body {
 
 #footer {
     margin-top: 10%;
+}
+
+.socialicon {
+    margin: 0 10px;
 }
