@@ -1,43 +1,86 @@
 :root {
-    --white: #F5FBEF;
-    --pink: #E58F65;
-    --black: #080708;
-    --grey: #686963;
-    --blue: #668586;
+    --white: #F5E9E2;
+    --blue: #6F8AB7;
+    --navy: #04131F;
 }
 
+* {box-sizing: border-box;}
+
 body {
-    box-sizing: border-box;
-    background-color: white;
-    background-color: var(--white) !important;
-    color: black;
-    color: var(--black) !important;
+    background-color: black;
+    background-color: var(--navy) !important;
+    color: white;
+    color: var(--white) !important;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     overflow: scroll;
     height: 100%;
 }
 
-#title,
-#eightballsays {
+/* Header */
+#title {
     font-weight: 700;
+    color: white;
+    color: var(--white);
 }
 
-#eightballimg {
-    z-index: 1;
+#info {
+    color: blue;
+    color: var(--blue);
+    font-size: 14px;
+}
+/*  main  */
+#eightballsays {
+    font-weight: 700;
+    color: blue;
+    color: var(--blue);
+}
+
+#eightballoutput {
+    color: white;
+    color: var(--white);
+}
+
+#input {
+    border: 1px solid #6F8AB7;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: transparent;
+    color: blue;
+    color: var(--blue);
 }
 
 #askbtn {
     width: 15%;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    background-color: var(--white);
+    color: var(--navy);
+    font-weight: 700;
 }
 
+/*  footer  */
 #footer {
-    background-color: var(--black);
-    margin-top: 10%;
+    background-color: navy;
+    background-color: var(--navy);
+    margin-top: 18%;
 }
+
+#name { 
+    text-decoration: none;
+    color: white;
+    color: var(--white);
+}
+
 #socialheader {
-    color: grey;
-    color: var(--grey);
+    color: blue;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+#socials {
+    margin-top: 8%;
 }
 
 .socialicon {
