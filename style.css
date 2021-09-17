@@ -12,19 +12,16 @@ body {
     color: white;
     color: var(--white) !important;
     font-family: 'VT323', monospace !important;
-    overflow: scroll;
+    overflow: hide scroll;
     height: 100%;
 }
 
 
-#title {
-    color: white;
-    color: var(--white);
-}
 #info {
     color: blue;
     color: var(--blue);
     letter-spacing: 1px;
+    font-size: 13px;
 }
 
 #eightballimg {
@@ -57,7 +54,11 @@ body {
     color: blue;
     color: var(--blue);
     letter-spacing:  1px;
+    min-width: 40% !important;
 }
+@media screen and (max-width: 576px) {
+    #input {width: 60%;}
+} 
 #askbtn {
     border-radius: 50px;
     border: none;
@@ -112,7 +113,7 @@ body {
     background-repeat: repeat-x;
     background-size: 250px;
     background-position: 0% 100%;
-    animation: squiggles 16s linear infinite forwards;
+    animation: squiggles 26s linear infinite forwards;
 }
 #socialheader {
     color: white;

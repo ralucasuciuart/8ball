@@ -1,4 +1,4 @@
-// Button onclick random answer
+// Gives randomized answer on click
 document.getElementById("askbtn").onclick = function getAnswer() {
     let randomNr = Math.floor(Math.random() * 15);
     let eightBall = '';
@@ -37,10 +37,11 @@ document.getElementById("askbtn").onclick = function getAnswer() {
     document.getElementById("eightballoutput").innerHTML = eightBall;
 }
 
+// Fade in answer
 $(document).ready(function () {
 
     $("#askbtn").click(function () {
         $("#eightballoutput").hide();
-        $("#eightballoutput").fadeIn("slow");
+        $("#eightballoutput").fadeIn(1500);
     });
 });
