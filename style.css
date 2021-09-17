@@ -8,7 +8,7 @@
 * {box-sizing: border-box;}
 body {
     background-color: black;
-    background-color: var(--navy) !important;
+    background: radial-gradient(circle, #0b2030 12%, #04131f 100%);
     color: white;
     color: var(--white) !important;
     font-family: 'VT323', monospace !important;
@@ -76,7 +76,7 @@ body {
 #footer {
     background-color: black;
     background-color: var(--navy);
-    margin-top: 18%;
+    margin-top: 10%;
 }
 #name { 
     text-decoration: none;
