@@ -11,7 +11,7 @@ body {
     background-color: var(--navy) !important;
     color: white;
     color: var(--white) !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'VT323', monospace !important;
     overflow: scroll;
     height: 100%;
 }
@@ -24,7 +24,7 @@ body {
 #info {
     color: blue;
     color: var(--blue);
-    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 #eightballimg {
@@ -56,9 +56,9 @@ body {
     background-color: transparent;
     color: blue;
     color: var(--blue);
+    letter-spacing:  1px;
 }
 #askbtn {
-    width: 15%;
     border-radius: 50px;
     border: none;
     background-color: white;
@@ -67,8 +67,8 @@ body {
     transition: all .3s ease;
 }
 #askbtn:hover {
-    background-color: violet;
-    background-color: var(--violet);
+    background-color: blue;
+    background-color: var(--blue);
     transition: all .3s ease;
 }
 
@@ -79,28 +79,44 @@ body {
 }
 #name { 
     text-decoration: none;
+    color: blue;
+    color: var(--blue);
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
+#name:hover {
     color: white;
     color: var(--white);
     transition: all .3s ease;
 }
-#name:hover {
-    color: blue;
-    color: var(--blue);
-    transition: all .3s ease;
+@keyframes squiggles {
+  0% {
+    background-position: 0% 100%
+  }
+  25% {
+    background-position: 25% 100%
+  }
+  50% {
+    background-position: 50% 100%
+  }
+  75% {
+    background-position: 75% 100%
+  }
+  100% {
+    background-position: 100% 100%
+  }
 }
-#divider { border-bottom: 1px solid #6f8ab7; }
+#divider {
+    padding-bottom: 1rem;
+    background-image: url("squiggle.svg");
+    background-repeat: repeat-x;
+    background-size: 250px;
+    background-position: 0% 100%;
+    animation: squiggles 16s linear infinite forwards;
+}
 #socialheader {
-    color: blue;
-    color: var(--blue);
+    color: white;
+    color: var(--white);
     text-decoration: none;
 }
-.socialicon {
-    margin: 0 10px;
-    width: 20px;
-    opacity: 0.5;
-    transition: opacity .2s ease;
-}
-.socialicon:hover{
-    opacity: 1;
-    transition: opacity .2s ease;
-}
+.socialicon { margin: 0 10px; }
