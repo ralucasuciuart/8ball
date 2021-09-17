@@ -37,4 +37,10 @@ document.getElementById("askbtn").onclick = function getAnswer() {
     document.getElementById("eightballoutput").innerHTML = eightBall;
 }
 
-// Button onclick style
+$(document).ready(function () {
+
+    $("#askbtn").click(function () {
+        $("#eightballoutput").hide();
+        $("#eightballoutput").fadeIn("slow");
+    });
+});
