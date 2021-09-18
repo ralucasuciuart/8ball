@@ -1,11 +1,11 @@
 
 ## Magic 🎱-Ball Game ##
 
-### 🔮 About ~
+### 🔮 About ~ ###
 #### This is a classic Magic 8-Ball Game, where you input a question and the 8-ball will tell you your fortune through a randomized answer (for this project, there are 15 possible answers, which are from the original 8-Ball game).
-The point of this project was to learn more Javascript and JQuery,familiarise myself further with Bootstrap, and create a visually appealing user interface design.
+##### The point of this project was to learn more Javascript and JQuery,familiarise myself further with Bootstrap, and create a visually appealing user interface design.
 
-### 🔮 Tools ~
+### 🔮 Tools ~ ###
 * HTML/CSS (content and more customized styling)
 * Bootstrap (for layout)
 * Javascript/JQuery (randomizing answers and other effects)
