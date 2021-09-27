@@ -126,4 +126,8 @@ body {
         background-color: var(--white);
         color: var(--navy);
     }
+    #askbtn:hover {
+        background-color: blue;
+        background-color: var(--blue);
+    }
 }
