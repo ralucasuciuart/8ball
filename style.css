@@ -16,7 +16,6 @@ body {
     height: 100%;
 }
 
-
 #info {
     color: blue;
     color: var(--blue);
@@ -113,7 +112,7 @@ body {
     background-repeat: repeat-x;
     background-size: 250px;
     background-position: 0% 100%;
-    animation: squiggles 26s linear infinite forwards;
+    animation: squiggles 20s linear infinite forwards;
 }
 #socialheader {
     color: white;
@@ -121,3 +120,10 @@ body {
     text-decoration: none;
 }
 .socialicon { margin: 0 10px; }
+@media (prefers-color-scheme: dark) {
+    #askbtn {
+        background-color: white;
+        background-color: var(--white);
+        color: var(--navy);
+    }
+}
