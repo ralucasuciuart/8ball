@@ -91,19 +91,19 @@ body {
 }
 @keyframes squiggles {
   0% {
-    background-position: 0% 100%
+    background-position: 0% 100%;
   }
   25% {
-    background-position: 25% 100%
+    background-position: 25% 100%;
   }
   50% {
-    background-position: 50% 100%
+    background-position: 50% 100%;
   }
   75% {
-    background-position: 75% 100%
+    background-position: 75% 100%;
   }
   100% {
-    background-position: 100% 100%
+    background-position: 100% 100%;
   }
 }
 #divider {
